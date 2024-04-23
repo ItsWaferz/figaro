@@ -130,6 +130,12 @@ function scrollContact() {
     elem.scrollIntoView();
 }
 
+function scrollEchipa() {
+    var elem = document.getElementById("echipa");
+    elem.scrollIntoView();
+}
+
+
 document.addEventListener('click', (e) => {
     const hamburger = document.getElementById('hamburger');
     const bar_1 = document.getElementById('bar-1');

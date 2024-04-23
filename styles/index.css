@@ -230,7 +230,7 @@ h1 {
 
 .pole img{
     max-width: 55dvh;
-    max-height: 5dvh;
+    max-height: 7dvh;
     height: 100%;
     width: auto;
 }
@@ -360,7 +360,7 @@ form button:hover,
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    bottom: 4dvh;
+    bottom: 1.5dvh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -382,7 +382,7 @@ form button:hover,
 
 
 .image {
-    max-width: 30dvw;
+    max-width: 23dvw;
     max-height: 35dvh;
     width: 100%;
     height: auto;
@@ -446,6 +446,16 @@ form button:hover,
 }
 
 .contact {
+    background-color: var(--background);
+    color: white;
+    justify-content: space-around;
+    padding-top: 10dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.joinus {
     background-color: var(--background);
     color: white;
     justify-content: space-around;
@@ -598,7 +608,7 @@ form button:hover {
         max-height: 25dvh;
     }
 
-    .contact {
+    .joinus {
         flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
