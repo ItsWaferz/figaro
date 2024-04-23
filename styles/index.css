@@ -455,6 +455,15 @@ form button:hover,
     align-items: center;
 }
 
+iframe {
+    height: 57dvh;
+    width: 40dvw;
+}
+
+.contact-text span {
+    color: var(--background);
+}
+
 .joinus {
     background-color: var(--background);
     color: white;
