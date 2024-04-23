@@ -178,7 +178,7 @@ h1 {
 }
 
 .animated span::before {
-    content: "Fotograf";
+    content: "Frizerie";
     animation: words 8s infinite;
 }
 
@@ -205,10 +205,10 @@ h1 {
 
 @keyframes words {
     0%, 50% {
-        content: "Fotograf";
+        content: "Eleganta";
     }
     51%, 100% {
-        content: "Web Designer";
+        content: "Stil";
     }
 }
 
@@ -219,6 +219,20 @@ h1 {
     5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
         width: calc(100% + 8px);
     }
+}
+
+.titlu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 auto;
+}
+
+.pole img{
+    max-width: 55dvh;
+    max-height: 5dvh;
+    height: 100%;
+    width: auto;
 }
 
 .nume {
@@ -327,9 +341,9 @@ form button:hover,
 }
 
 .vertical {
-    aspect-ratio: 2/3;
-    max-width: 53dvh;
-    max-height: 80dvh;
+    aspect-ratio: 14/18;
+    max-width: 70dvh;
+    max-height: 90dvh;
     height: 100%;
     width: auto;
 }
@@ -628,9 +642,9 @@ form button:hover {
     }
     
     .vertical {
-        aspect-ratio: 2/3;
-        max-width: 80dvw;
-        max-height: 120dvw;
+        aspect-ratio: 14/18;
+        max-width: 77dvw;
+        max-height: 99dvw;
         height: 100%;
         width: auto;
     }
