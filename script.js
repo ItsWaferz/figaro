@@ -106,7 +106,7 @@ function checkInputs() {
 }
 
 function openBtn() {
-    document.getElementById('sidebar').style.width = '300px';
+    document.getElementById('sidebar').style.width = '350px';
     document.getElementById('closex').style.width = '60px';
 }
 

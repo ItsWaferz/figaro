@@ -265,7 +265,9 @@ h1 {
 }
 
 
-.butoane button:nth-child(1) {
+.butoane button:nth-child(1),
+.butoane button:nth-child(2),
+.butoane button:nth-child(3) {
     letter-spacing: 0.8px;
     margin: 50px 5px;
     font-size: 2rem;
@@ -280,14 +282,18 @@ h1 {
 
 
 .butoane button:nth-child(1):active,
-.butoane button:nth-child(1):hover {
+.butoane button:nth-child(1):hover,
+.butoane button:nth-child(2):active,
+.butoane button:nth-child(2):hover,
+.butoane button:nth-child(3):active,
+.butoane button:nth-child(3):hover {
     background-color: var(--acc);
     padding: 15px;
     margin: 45px 0px;
 }
 
 form button,
-.butoane a:nth-child(3) button{
+.butoane a:nth-child(4) button{
     margin: 50px 5px;
     font-size: 2rem;
     padding: 10px;
@@ -301,8 +307,8 @@ form button,
 
 form button:active,
 form button:hover,
-.butoane a:nth-child(3) button:active,
-.butoane a:nth-child(3) button:hover {
+.butoane a:nth-child(4) button:active,
+.butoane a:nth-child(4) button:hover {
     background-color: var(--action);
     padding: 15px;
     margin: 45px 0px;
@@ -464,6 +470,51 @@ iframe {
     color: var(--background);
 }
 
+.echipa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row-barbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.echipa .preturi,
+.echipa .barbers {
+    max-height: 100dvh;
+    max-width: 20dvw;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.barbers h2 {
+    margin-top: 80dvh;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.preturi h1 {
+    color: black;
+}
+
+.preturi h2 {
+    font-size: 2rem;
+}
+
+.echipa div img {
+    top: 12dvh;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .joinus {
     background-color: var(--background);
     color: white;
@@ -554,7 +605,8 @@ form button:hover {
 
     .butoane button:nth-child(1),
     .butoane button:nth-child(2),
-    .butoane a:nth-child(3) button{
+    .butoane button:nth-child(3),
+    .butoane a:nth-child(4) button {
         font-size: 1.2rem;
     }
 
@@ -565,6 +617,19 @@ form button:hover {
     .poza:active,
     .poza:hover {
         max-width: 500px;
+    }
+
+    .echipa {
+        grid-template-columns: 1fr;
+    }
+
+    .echipa h2 {
+        font-size: 1.9rem;
+    }
+
+    .echipa .preturi,
+    .echipa .barbers {
+        max-width: 25dvw;
     }
 }
 
@@ -579,7 +644,8 @@ form button:hover {
 
     .butoane button:nth-child(1),
     .butoane button:nth-child(2),
-    .butoane a:nth-child(3) button{
+    .butoane button:nth-child(3),
+    .butoane a:nth-child(4) button{
         font-size: 1rem;
     }
 
@@ -604,6 +670,33 @@ form button:hover {
     form h1 {
         white-space: normal;
     }
+
+    .contact {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .echipa {
+        grid-template-columns: 1fr;
+    }
+
+    .echipa h2 {
+        font-size: 1.9rem;
+    }
+
+    .echipa .preturi,
+    .echipa .barbers {
+        max-width: 35dvw;
+    }
+
+    .echipa .preturi {
+        text-align: center;
+    }
+
+    .row-barbers {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 800px) or (orientation: portrait){
@@ -666,5 +759,24 @@ form button:hover {
         max-height: 99dvw;
         height: 100%;
         width: auto;
+    }
+
+    .contact {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    iframe {
+        height: 57dvh;
+        width: 60dvw;
+    }
+
+    .echipa .preturi {
+        text-align: center;
+    }
+
+    .echipa .preturi,
+    .echipa .barbers {
+        max-width: 70dvw;
     }
 }
