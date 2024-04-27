@@ -1,3 +1,3 @@
 # portofolio
 
-https://itswaferz.github.io/portofolio/
+https://itswaferz.github.io/figaro/
